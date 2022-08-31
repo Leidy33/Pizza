@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos_pizza</title>
+</head>
+<body>
+    <h1>Pizza'NAM</h1>
+    <form name="Pizza'nam" action="" method="POST">
+        <input type="text" name="nombre_completo" 
+        placeholder="Ingresa tu nombre" 
+        maxlength="20" 
+        minlength="2" 
+        size="30" 
+        required 
+        >
+        <br>
+        <br>
+        <input type="text" name="E_mail" 
+        placeholder="Ingresa tu Email" 
+        maxlength="20" 
+        minlength="2" 
+        size="30" 
+        required 
+        >
+        <br>
+        <br>
+        <input type="text" name="dirección" 
+        placeholder="Ingresa tu dirección exacta" 
+        maxlength="20" 
+        minlength="2" 
+        size="30" 
+        required 
+        >
+        <br>
+        <br>
+        <label>
+        Tipo de pizza
+        </label>
+        <br>
+        <select name="Tipo" id="Tipo_pizza">
+            <option value="Napolitana">Napolitana</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Vegana">Vegana</option>
+            <option value="4 quesos">4 quesos</option>
+        </select>
+        <br>
+        <br>
+        <label for="Tamaño_pizza">
+            Tamaño de la pizza
+        </label>
+        <select name="tamaño" id="Tamaño_pizza">
+            <option value="Grande">Grande</option>
+            <option value="Pequeña">Pequeña</option>
+            <option value="Mediana">Mediana</option>
+            <option value="Personal">Personal</option>
+        </select>
+        <br>
+        <br>
+        <label>
+            Cuántas pizzas deseas
+            <input 
+            type="number"
+            name="numero"
+            min="0"
+            max="50"
+            size="3"
+            required
+            >
+        </label>
+        <br>
+        <br>
+        <label
+        for="entrega">
+        Hora de entrega
+        <input
+        id="entrega"
+        type="time"
+        name="hora"
+        max="23:30:00"
+        min="18:00:00"
+        step="1"
+        required
+        >
+        </label>
+    
+        <br>
+        <br>
+        <textarea
+        name="observacion"
+        rows="15"
+        cols="35"
+        >"Quieres adicionar algo más a la pizza o especificar algo de tu pedido"
+        </textarea>
+        <br>
+        <br>
+        <button type="submit">
+            enviar
+        </button>
+        
+    </form>
+</body>
+</html>
